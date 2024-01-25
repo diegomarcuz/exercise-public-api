@@ -1,5 +1,6 @@
 require('dotenv').config();
 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 const { BUILD_DIR, IS_PROD } = require('./constants');
@@ -8,6 +9,7 @@ module.exports = {
   output: {
     path: BUILD_DIR,
     filename: IS_PROD ? '[name].[contenthash].js' : '[name].js',
+    publicPath: process.env.PUBLIC_PATH,
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -23,7 +25,7 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|jpg|gif)$/i,
+        test: /\.(png|jpg|gif|woff|woff2)$/i,
         use: [
           {
             loader: 'url-loader',
@@ -37,7 +39,19 @@ module.exports = {
         test: /\.svg$/,
         use: ['@svgr/webpack'],
       },
+      {
+        test: /\.(pdf)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ],
   },
-  
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+    }),
+  ],
 };
