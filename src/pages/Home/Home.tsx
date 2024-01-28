@@ -1,5 +1,10 @@
-import * as S from './styles';
+import * as S from './Home.style';
 
-const Home = () => <S.Title>Hello World!</S.Title>;
-
+const Home = () => {
+  return (
+    <S.Container>
+      <h1>Seja bem-vindo ao nosso buscador!!!</h1>
+    </S.Container>
+  );
+};
 export default Home;

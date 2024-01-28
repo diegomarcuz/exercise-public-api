@@ -19,7 +19,10 @@
       "routes/*": ["routes/*"],
       "services/*": ["services/*"],
       "pages/*": ["pages/*"],
-      "components/*": ["components/*"]
+      "components/*": ["components/*"],
+      "config/*": ["config/*"],
+      "test/*": ["test/*"],
+      "utils/*": ["utils/*"]
     }
   },
   "include": ["src"]

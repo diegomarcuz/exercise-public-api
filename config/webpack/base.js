@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
-
+const EnvironmentPlugin = require('webpack/lib/EnvironmentPlugin');
 const { BUILD_DIR, IS_PROD } = require('./constants');
 
 module.exports = {
@@ -47,11 +47,16 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
+    new EnvironmentPlugin(['API_URL', 'AUTH_TOKEN']),
   ],
 };

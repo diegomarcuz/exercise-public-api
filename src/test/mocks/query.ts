@@ -1,0 +1,26 @@
+const query = {
+  status: 'success',
+  isError: false,
+  isFetched: true,
+  isFetching: false,
+  isFetchedAfterMount: true,
+  isIdle: false,
+  isLoading: false,
+  isLoadingError: false,
+  isPlaceholderData: false,
+  isSuccess: true,
+  isRefetchError: false,
+  isRefetching: false,
+  isPreviousData: false,
+  isStale: false,
+  data: {},
+  error: null,
+  dataUpdatedAt: 0,
+  errorUpdatedAt: 0,
+  failureCount: 0,
+  errorUpdateCount: 0,
+  refetch: jest.fn(),
+  remove: jest.fn(),
+} as const;
+
+export { query };

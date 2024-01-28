@@ -1,11 +1,13 @@
-import { BrowserRouter as Router } from 'react-router-dom';
+import Router from 'routes';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import 'normalize.css';
 
-import Routes from 'routes';
+const queryClient = new QueryClient();
 
 const App = () => (
-  <Router>
-    <Routes />
-  </Router>
+  <QueryClientProvider client={queryClient}>
+    <Router />
+  </QueryClientProvider>
 );
 
 export default App;
