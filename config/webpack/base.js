@@ -25,29 +25,6 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|jpg|gif|woff|woff2)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192,
-            },
-          },
-        ],
-      },
-      {
-        test: /\.svg$/,
-        use: ['@svgr/webpack'],
-      },
-      {
-        test: /\.(pdf)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
-      },
-      {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
