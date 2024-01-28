@@ -4,6 +4,7 @@
 <summary>Table of Contents</summary>
 
 - :weight\_lifting: API Exercise
+  - [Bussiness Rules](#bussiness-rules)
   - [:gear: Built with](#gear-built-with)
   - [:computer: Running the project](#computer-running-the-project)
   - [:file\_folder: Folder structure](#file_folder-folder-structure)
@@ -12,6 +13,20 @@
 
 </details>
 
+---
+
+## Bussiness Rules
+
+These project has three pages:
+
+  - Home: where has a search bar to search produtos directly from API
+  - Product detail: responsible to detail a specific product by id on the route
+  - Products: responsible for show a list of products based on the query searched on the bar
+
+Important to mention: 
+
+- Search bar component holds the main rule of this application, because it shows the list of product as option to be selected and goes to the Product detail page or when clicking over the search icon goes to the Products page to show a list of products.
+  
 ---
 
 ## :gear: Built with

@@ -56,18 +56,20 @@ function Search() {
                 endAdornment: (
                   <>
                     {params.InputProps.endAdornment}
-                    <SearchIcon
-                      sx={{
-                        zIndex: 9,
-                        cursor: 'pointer',
-                      }}
-                      onClick={() => {
-                        navigate({
-                          pathname: '/products',
-                          search: searchParams.toString(),
-                        });
-                      }}
-                    />
+                    {query && (
+                      <SearchIcon
+                        sx={{
+                          zIndex: 9,
+                          cursor: 'pointer',
+                        }}
+                        onClick={() => {
+                          navigate({
+                            pathname: '/products',
+                            search: searchParams.toString(),
+                          });
+                        }}
+                      />
+                    )}
                   </>
                 ),
               }}
