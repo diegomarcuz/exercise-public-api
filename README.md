@@ -30,15 +30,15 @@
 
 ### Reason about each technology
 
-- React: It is the main tech I used for and I decided to build without any framework, because it is the way I am used to nowawdays, but I understand it is important to work with frameworks in order to acheive SEO.
-- Webpack: Again It is the main bundler I used to, but I already play with Parcel and Vite (which one I felt some difficulties and I did not like so much).
-- Typescript: It is way better to understand all the data flow without needing to print the data.
-- Styled components: I like to create styled component and how it keeps the organization and simple to read when comparing to Tailwind CSS (as far as I could learn).
-- React Router: It is used to separate the concerns of each flow without needing to create Render Manager to control which component is required to be shown, as well it can be used as state management and other goods stuffs.
-- RTL and Jest: I have never used another tool for testing so this is my first choice.
-- React Query: Besides when developing GraphQL project and uses the Apollo GraphQL to connect with the GraphQL api (at least for me this is my choice), when handling with REST, react query is my first choice, because I can perform data fetch and use it as state manager, because of the easy interaction cache feature.
-- MUI: Provide style and components guide and it is very stable.
-- Normalize CSS: Due to its broader usage and easy to implement.
+- **React**: It is the main tech I used for and I decided to build without any framework, because it is the way I am used to nowawdays, but I understand it is important to work with frameworks in order to acheive SEO.
+- **Webpack**: Again It is the main bundler I used to, but I already play with Parcel and Vite (which one I felt some difficulties and I did not like so much).
+- **Typescript**: It is way better to understand all the data flow without needing to print the data.
+- **Styled components**: I like to create styled component and how it keeps the organization and simple to read when comparing to Tailwind CSS (as far as I could learn).
+- **React Router**: It is used to separate the concerns of each flow without needing to create Render Manager to control which component is required to be shown, as well it can be used as state management and other goods stuffs.
+- **RTL and Jest**: I have never used another tool for testing so this is my first choice.
+- **React Query**: Besides when developing GraphQL project and uses the Apollo GraphQL to connect with the GraphQL api (at least for me this is my choice), when handling with REST, react query is my first choice, because I can perform data fetch and use it as state manager, because of the easy interaction cache feature.
+- **MUI**: Provide style and components guide and it is very stable.
+- **Normalize CSS**: Due to its broader usage and easy to implement.
 
 ---
 
